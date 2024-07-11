@@ -1,0 +1,9 @@
+<launch>
+<!-- example launch -->
+  <node pkg="exercise2" name="exercise2_node" type="exercise2_node" output="screen">
+    <param name="~spin_rate" value="10.0" type="double"/>
+    <!-- TODO -->
+  </node>
+
+
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+
+<!-- example launch -->
+  <node pkg="exercise2" name="exercise2_param_node" type="exercise2_param_node" output="screen">
+    <!-- TODO -->
+  <!-- remap odom topic -->
+    <remap from="/odom" to="/visual_slam/odom"/>
+    <param name="~spin_rate" value="100.0" type="double"/>
+    <param name="coords" value="-1,2,2;3,4,2;1,1,1;" type="string"/>
+  </node>
+
+
+</launch>

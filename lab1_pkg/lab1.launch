@@ -1,0 +1,9 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab1)/rviz/lab1.rviz" />
+
+    <node name="turtle_controller" pkg="lab1" type="turtle_controller" output="screen">
+        <param name="type" value="2" type="int"/>
+    </node>
+
+    <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen" />
+</launch>
